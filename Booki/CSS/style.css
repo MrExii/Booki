@@ -1,0 +1,516 @@
+/*GENERAL SETTINGS*/
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*HEADER*/
+header{
+    width: 97%;
+    height: 80px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*Logo "Booki" properties*/
+.logo{
+    width: 100px;
+}
+
+nav{
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+nav a{
+    margin-right: 67px;
+}
+
+/*Cancel the margin right of the "Activités" element*/
+nav a:nth-last-of-type(1){
+    margin-right: 0px;
+}
+
+nav ul{
+    height: 100%;
+
+    display: flex;
+}
+
+nav li{
+    height: 100%;
+    padding: 0px 10px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+nav li:hover{
+    border-width: 2px 0px 0px 0px;
+    border-style: solid;
+    border-color: #0065FC;
+}
+
+nav li:hover > a{
+    color: #0065FC;
+}
+
+/*BODY*/
+/*bodyTop = from "Trouvez votre..." to "Plus de 500..."*/
+.bodyTop{
+    width: 97%;
+    margin: auto;
+    padding-top: 63px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyTop > h1{
+    font-size: 22px;
+}
+
+.bodyTop > h2{
+    margin: 8px 0px 0px 0px;
+
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*div = container of .searchBar, .filters, .bottom*/
+.bodyTop > div{
+    margin: 20px 0px 0px 0px;
+}
+
+.searchBar{
+    display: flex;
+    height: 49px;
+}
+
+/*Icon settings*/
+.searchBar div{
+    margin: 0;
+    padding: 15px 19px;
+
+    align-self: center;
+
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.searchBar input{
+    padding: 0px 0px 0px 16px;
+    
+    border: none;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.searchBar input[placeholder]{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.searchBar input:focus{
+    outline: none; /*Removes the outline around the text field when selected*/
+}
+
+.searchBar button{
+    padding: 14px 16px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    background-color: #0065FC;
+
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.searchBar button:hover{
+    cursor: pointer;
+}
+
+.searchBar button i{
+    display: none;
+}
+
+.filters{
+    padding-top: 46px;
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.filters .sous_titres{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.filters div{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.filters a{
+    display: flex;
+}
+
+/*div = filter choice*/
+.filters .sous_titres div{ 
+    padding: 16px 20px;
+    display: flex;
+    justify-content: center;
+
+    width: auto;
+
+    border: 2px solid #D9D9D9;
+    border-radius: 30px;
+
+    transition: all 0.2s;
+}
+
+/*Icon settings of a filter choice*/
+.filters div i{
+    align-self: center;
+    color: #0065FC;
+}
+
+.filters div h3{
+    padding: 0px 0px 0px 10px;
+
+    font-size: 16px;
+}
+
+.filters .sous_titres div:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.numberOfResults{
+    margin: 40px 0px 0px 0px;
+
+    display: flex;
+    align-items: center;
+}
+
+.numberOfResults i{
+    padding: 12px 10px;
+
+    color: #0065FC;
+
+    border: 1px solid #D9D9D9;
+    border-radius: 30px;
+}
+
+.numberOfResults h2{
+    margin: 0px 0px 0px 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+}
+/*end bodyTop*/
+
+/*bodyMiddle = "Hébergements" & "Les plus populaires"*/
+.bodyMiddle{
+    width: 97%;
+    margin: auto;
+
+    gap: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements{
+    width: 60%;
+    margin-top: 39px;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+/*Results container*/
+.hebergements > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hebergements h2{
+    margin-left: 30px;
+}
+
+/*Afficher Plus*/
+.hebergements h2:nth-last-of-type(1){
+    padding: 10px 0px 30px 0px;
+    font-size: 18px;
+}
+
+/*Hébergements à XX*/
+.hebergements h2:nth-last-of-type(2){
+    padding: 42px 0px 30px 0px;
+}
+
+/*Result card settings*/
+.logement{
+    margin-bottom: 15px;
+    width: 30%;
+    
+    background: #FFFFFF;
+    border-radius: 20px;
+    
+    box-shadow: 0 0 5px #D9D9D9;
+
+    transition: 0.1s all;
+}
+
+.logement:hover{
+    transform: scale(1.03, 1.03);
+}
+
+.logement img{
+    width: 100%;
+    height: 150px;
+
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.description{
+    padding: 0px 0px 15px 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.description h3{
+    padding-bottom: 5px;
+
+    font-size: 16px;
+}
+
+.description h4{
+    padding-bottom: 5px;
+
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row;
+
+    color: #0065FC;
+}
+
+.stars i:nth-last-of-type(1){
+    color: #F2F2F2;
+}
+/*end Result card settings*/
+
+.populaires{
+    margin-top: 39px;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #F2F2F2;
+
+    border-radius: 20px;
+}
+
+.populaires > div{
+    width: 90%;
+    margin: 0px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires > div h2{
+    padding: 42px 0px 0px 0px;
+
+    display: inline;
+}
+
+.populaires > div i{
+    padding: 42px 0px 0px 0px;
+
+    color: #0065FC;
+}
+
+.populaires section{
+    padding-top: 23px;
+
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.populaires .logement{
+    width: 90%;
+    height: 144px;
+}
+
+.populaires .logement a{
+
+    display: flex;
+    flex-direction: row;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.populaires .logement img{
+    width: 40%;
+    height: 144px;
+
+    border-radius: 20px 0px 0px 20px;
+
+    box-sizing: border-box;
+}
+
+.populaires .logement .description{
+    width: 60%;
+
+    justify-content: space-between;
+}
+
+.populaires .logement .description h3{
+    padding-top: 16px;
+}
+
+/*bodyBottom = "Activités à XX"*/
+.bodyBottom{
+    width: 97%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.bodyBottom h2{
+    padding: 0px 0px 25px 0px;
+}
+
+.activites{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+/*div = activity choice*/
+.activites div{
+    width: 25%;
+}
+
+.activites div div{
+    width: 100%;
+}
+
+.activites div a{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    border-radius: 20px;
+    
+    box-shadow: 0 0 2em #D9D9D9;
+
+    transition: 0.1s all;
+}
+
+.activites div a:hover{
+    transform: scale(1.03, 1.03);
+}
+
+.activites div a img{
+    width: 100%;
+    height: 387px;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activites h3{
+    padding: 15px 20px;
+
+    font-size: 16px;
+}
+
+/*FOOTER*/
+footer{
+    width: 97%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+/*section = .list container*/
+footer section{
+    padding: 45px 0px 58px 0px;
+
+    display: flex;
+    justify-content: space-around;
+    
+    background-color: #F2F2F2;
+}
+
+/*Assistance list*/
+.list:nth-last-of-type(1){
+    padding-right: 250px;
+}
+
+.list h2{
+    font-size: 18px;
+}
+
+.list ul li{
+    padding: 12px 0px 0px 0px;
+    font-size: 16px;
+}
+
+/*First list element*/
+.list ul li:nth-last-of-type(3){
+    padding-top: 20px;
+}

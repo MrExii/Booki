@@ -1,0 +1,50 @@
+@media (max-width: 992px) {
+    .filters{
+        width: 97%;
+        justify-content: flex-start;
+    }
+
+    .bodyMiddle{
+        flex-direction: column;
+    }
+
+    .hebergements{
+        width: 100%;
+    }
+
+    .populaires{
+        margin: 50px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .populaires > div{
+        justify-content: space-between;
+    }
+
+    .populaires .logement{
+        width: 30%;
+    }
+
+    .populaires > div{
+        width: 95%;
+    }
+
+    .populaires section{
+        padding-bottom: 34px;
+        width: 95%;
+        margin: auto;
+
+        gap: 0px;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .activites div a img{
+        height: 211px;
+    }
+
+    .list:nth-last-of-type(1){
+        padding-right: 0px;
+    }
+}
